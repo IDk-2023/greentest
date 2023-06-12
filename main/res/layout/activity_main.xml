@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraintur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/moistureTextView"
+        android:layout_width="428dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/textview2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fanToggleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureTextView"
+        app:layout_constraintVertical_bias="0.838"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="424dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="404dp"
+        android:text="@string/textview"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <ToggleButton
+        android:id="@+id/heaterToggleButton"
+        android:layout_width="113dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/togglebutton3"
+        android:textOff="@string/heater_off"
+        android:textOn="@string/heater_on"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/connectButton"
+        app:layout_constraintEnd_toStartOf="@+id/waterToggleButton"
+        app:layout_constraintStart_toEndOf="@+id/fanToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/moistureTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
+
+    <ToggleButton
+        android:id="@+id/waterToggleButton"
+        android:layout_width="114dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
+        android:checked="false"
+        android:text="@string/togglebutton"
+        android:textOff="@string/water_off"
+        android:textOn="@string/water_on"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/connectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moistureTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="243dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/connect"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/fanToggleButton"
+        android:layout_width="121dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/togglebutton2"
+        android:textOff="@string/cooler_off"
+        android:textOn="@string/cooler_on"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/connectButton"
+        app:layout_constraintEnd_toStartOf="@+id/heaterToggleButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="488dp"
+        android:layout_height="229dp"
+        android:background="#69D86E"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/panelBackground"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/titleapp"
+        android:layout_width="343dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/greenhouse_app"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/mohammad_aloklah"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_190711801"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
